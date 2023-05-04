@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I form</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>I FORM</h1>
+
+        <p>I form sono costituiti fondamentalmente da TRE tipi di campi: SELECT per creare menu a tendina, TEXTAREA per
+            creare aree di inserimento testo, INPUT per tutto il resto (testo, numeri, date, radio, checkbox...)</p>
+
+        <h2>Form semplice</h2>
+
+        <form method="POST" action="index.html">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="button" id="submit">INVIA</button>
+            <button type="reset" id="reset">CANCELLA</button>
+        </form>
+
+        <hr>
+
+        <h2>Form complesso</h2>
+
+        <h3>Registrazione</h3>
+
+        <form>
+            <!-- Anagrafica -->
+            <fieldset>
+                <legend>Anagrafica</legend>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+                <label for="cognome">Cognome</label>
+                <input type="text" id="cognome" name="cognome" required>
+                <br><br>
+                <label for="luogoNascita">Luogo di nascita</label>
+                <input type="text" id="luogoNascita" name="luogoNascita">
+                <label for="dataNascita">Data di nascita</label>
+                <input type="date" id="dataNascita" name="dataNascita">
+                <label for="codFis">Codice Fiscale</label>
+                <input type="text" id="codFis" name="codFis" maxlength="16" minlength="16">
+                <br><br>
+                <label for="indirizzo">Indirizzo</label>
+                <textarea id="indirizzo" name="indirizzo" rows="4" cols="80"></textarea>
+            </fieldset>
+            <br>
+            <!-- Contatti -->
+            <fieldset>
+                <legend>Informazioni di contatto</legend>
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="linkedin">Profilo LinkedIn</label>
+                <input type="url" id="linkedin" name="linkedin">
+                <label for="facebook">Profilo Facebook</label>
+                <input type="url" id="facebook" name="facebook">
+            </fieldset>
+            <br>
+            <!-- Preferenze -->
+            <fieldset>
+                <legend>Preferenze</legend>
+                <label for="corso">Corso scelto (scegli un tipo di corso)</label>
+                <select id="corso">
+                    <option value="" selected></option>
+                    <option value="front">Front-end Developer</option>
+                    <option value="back">Back-end Developer</option>
+                    <option value="full">Full-stack Developer</option>
+                </select>
+                <br>
+                <p>Linguaggi conosciuti</p>
+                <input type="checkbox" id="html" name="html" value="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="css" value="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="js" value="js">
+                <label for="js">JavaScript</label>
+                <input type="checkbox" id="ts" name="ts" value="ts">
+                <label for="ts">TypeScript</label>
+                <input type="checkbox" id="php" name="php" value="php">
+                <label for="php">PHP</label>
+                <br>
+                <p>Fascia oraria preferita</p>
+                <input type="radio" id="partTime" value="partTime" name="fascia">
+                <label for="partTime">Part Time</label><br>
+                <input type="radio" id="fullTime" value="fullTime" name="fascia">
+                <label for="fullTime">Full Time</label><br>
+                <input type="radio" id="serale" value="serale" name="fascia">
+                <label for="serale">Serale</label>
+            </fieldset>
+            <br>
+            <button type="submit" id="submit">INVIA</button>
+            <button type="reset" id="reset">CANCELLA</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
