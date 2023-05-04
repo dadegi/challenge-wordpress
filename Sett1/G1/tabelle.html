@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelle</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>TITOLO DI TESTATA - EVENTUALE LOGO</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="seconda.html">SECONDA</a></li>
+                <li><a href="terza.html">TERZA</a></li>
+                <li><a href="form.html">FORM</a></li>
+                <li><a href="tabelle.html">TABELLE</a></li>
+                <li><a href="immagini.html">IMMAGINI</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        <h1>TABELLE</h1>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>Cella 1</td>
+                    <td>Cella 2</td>
+                    <td>Cella 3</td>
+                </tr>
+                <tr>
+                    <td>Cella 1</td>
+                    <td>Cella 2</td>
+                    <td>Cella 3</td>
+                </tr>
+                <tr>
+                    <td>Cella 1</td>
+                    <td>Cella 2</td>
+                    <td>Cella 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>&nbsp;</p>
+
+        <table>
+            <caption>Elenco persone</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mario</td>
+                    <td>Rossi</td>
+                    <td>mario@rossi.com</td>
+                </tr>
+                <tr>
+                    <td>Aldo</td>
+                    <td>Bianchi</td>
+                    <td>aldo@bianchi.com</td>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td>Verdi</td>
+                    <td>anna@verdi.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Totale persone: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <p>&nbsp;</p>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>Cella 1</td>
+                <td>Cella 2</td>
+                <td>Cella 3</td>
+                <td>Cella 4</td>
+                <td>Cella 5</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Cella 1 righe 2/3</td>
+                <td>Cella 2</td>
+                <td colspan="3">Cella 3/4/5</td>
+            </tr>
+            <tr>
+                <td>Cella 2</td>
+                <td>Cella 3</td>
+                <td rowspan="2" colspan="2">Cella 4/5 righe 3/4</td>
+            </tr>
+            <tr>
+                <td>Cella 1</td>
+                <td>Cella 2</td>
+                <td>Cella 3</td>
+            </tr>
+            <tr>
+                <td>Cella 1</td>
+                <td>Cella 2</td>
+                <td>Cella 3</td>
+                <td>Cella 4</td>
+                <td>Cella 5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>&nbsp;</p>
+
+    <footer>
+        <!-- Informazioni di contatto: address -->
+        <address>
+            Azienda XYZ<br />
+            Via Roma 20<br />
+            00100 Roma<br />
+            <a href="mailto:info@xyz.com">info@xyz.com</a>
+        </address>
+        <a href="javascript:void(0)">Informativa privacy</a> |
+        <a href="javascript:void(0)">Informativa cookies</a> <br /><br />
+        <a href="javascript:void(0)">Facebook</a> |
+        <a href="javascript:void(0)">Instagram</a> |
+        <a href="javascript:void(0)">Linkedin</a>
+    </footer>
+</body>
+
+</html>
