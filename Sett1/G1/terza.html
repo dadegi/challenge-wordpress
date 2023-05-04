@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dario">
+    <meta name="description" content="Breve descrizione della pagina">
+    <meta name="keywords" content="parole, chiave, separate, da virgole">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- HEADER E NAV -->
+    <!-- l'area header DEVE essere UNICA nella pagina -->
+    <header>
+        <h1>TITOLO DI TESTATA (nome azienda) - EVENTUALE LOGO</h1>
+        <!-- l'area nav rappresenta l'area di navigazione PRINCIPALE, dalla quale il motore di ricerca ricostruisce la mappa sito, di conseguenza dovrebbe essere UNICA nella pagina -->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="seconda.html">SECONDA</a></li>
+                <li><a href="terza.html">TERZA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Contenitore generico: div - aree di contenuto non semanticamente identificate -->
+    <div id="container">
+        <!-- area di contenuto principale: main. Deve essere sempre presente in una pagina, ma il motore di ricerca legge soltanto il PRIMO main che trova, di conseguenza main DEVE essere unico nella pagina -->
+        <main>
+            <!-- Titolo pagina (h1): dovrebbe essere UNICO nella pagina, in quanto elemento che da' il titolo a TUTTA la pagina -->
+            <h1>TITOLO PAGINA - Frase regina</h1>
+            <!-- Se un h2 è immediatamente successivo a un h1, viene semanticamente letto come sottotitolo -->
+            <h2>Sottotitolo (legato al titolo precedente)</h2>
+
+            <hr>
+
+            <h4>Contenuto principale</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ducimus exercitationem nesciunt quod
+                dolorem distinctio! Culpa itaque perspiciatis cum libero at harum rem aliquam pariatur accusantium quis
+                a, est modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat, rerum
+                quibusdam optio ipsam eius itaque tenetur excepturi omnis maiores adipisci voluptatum, nihil incidunt,
+                iure laboriosam dicta ratione molestias doloremque?</p>
+
+            <!-- sezione tematica (section) legata al contenuto principale -->
+            <section>
+                <!-- Se un h2 NON è immediatamente successivo a un h1, viene semanticamente letto titolo del contenuto successivo -->
+                <h2>Titolo sezione</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem ex deserunt exercitationem,
+                    corporis laborum repellendus beatae cupiditate provident vero harum recusandae expedita nulla,
+                    nostrum et nihil animi fugit voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Distinctio adipisci minus modi itaque delectus. Perspiciatis nobis autem, laborum explicabo delectus
+                    vel minus laboriosam eveniet adipisci sint voluptatum tenetur odit magnam!</p>
+            </section>
+        </main>
+
+        <!-- sezione tematica (section) NON legata al contenuto principale -->
+        <section>
+            <h2>Titolo sezione</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem ex deserunt exercitationem, corporis
+                laborum repellendus beatae cupiditate provident vero harum recusandae expedita nulla, nostrum et nihil
+                animi fugit voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio adipisci
+                minus modi itaque delectus. Perspiciatis nobis autem, laborum explicabo delectus vel minus laboriosam
+                eveniet adipisci sint voluptatum tenetur odit magnam!</p>
+        </section>
+
+        <!-- Sezione di contenuti collaterali: aside -->
+        <aside>
+            <h2>Contenuti secondari</h2>
+            <!-- contenuti indipendenti, più o meno slegati dal contenuto principale -->
+            <article>
+                <h2>Titolo articolo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam maxime, aut doloribus animi ipsum
+                    voluptatem minima hic quod est repudiandae laborum enim quaerat, autem labore ipsa eaque modi
+                    accusamus omnis.</p>
+            </article>
+            <article>
+                <h2>Titolo articolo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam maxime, aut doloribus animi ipsum
+                    voluptatem minima hic quod est repudiandae laborum enim quaerat, autem labore ipsa eaque modi
+                    accusamus omnis.</p>
+            </article>
+        </aside>
+
+    </div>
+
+    <hr>
+
+    <!-- Piè di pagina: footer; può essere utilizzato anche come piè di pagina di una sezione, ma è sconsigliato -->
+    <footer>
+        <!-- Informazioni di contatto: address -->
+        <address>
+            Azienda XYZ<br>
+            Via Roma 20<br>
+            00100 Roma<br>
+            <a href="mailto:info@xyz.com">info@xyz.com</a>
+        </address>
+        <a href="javascript:void(0)">Informativa privacy</a> | <a href="javascript:void(0)">Informativa cookies</a>
+        <br><br>
+        <a href="javascript:void(0)">Facebook</a> | <a href="javascript:void(0)">Instagram</a> | <a
+            href="javascript:void(0)">Linkedin</a>
+    </footer>
+
+</body>
+
+</html>
