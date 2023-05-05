@@ -1,16 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
     color: red;
-    font-family: fantasy;
-}
-
-a {
-    text-decoration: none;
 }
 
 ul {
     list-style-type: square;
+}
+
+h3 {
+    border: 5px dashed cyan;
+}
+
+/* CSS della pagina position */
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    margin-block-start: 0px;
+}
+
+header a:link, header a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
+
+header ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+header ul li {
+    display: inline;
+}
+
+img {
+    width: 50px;
+}
+
+#facebook {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+}
+
+#instagram {
+    position: fixed;
+    bottom: 100px;
+    right: 5px;
 }
