@@ -49,8 +49,8 @@ h1 {
     display: block;
 }
 
-#featured a,
-#link {
+#featured a:link, #featured a:visited, 
+#link:link, #link:visited {
     color: #177;
 }
 
