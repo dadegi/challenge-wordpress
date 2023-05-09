@@ -1,3 +1,5 @@
+/* IMPOSTAZIONI GENERALI */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,6 +8,8 @@ html, body {
     font-size: 70%;
     line-height: 1.2rem;
 }
+
+/* PAGINA INDEX */
 
 #container {
     display: flex;
@@ -39,27 +43,4 @@ h1 {
 #aside {
     background-color: green;
     flex-grow: 1;
-}
-
-@media screen and (max-width: 768px) {
-    #container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #container div {
-        width: 90%;
-    }
-
-    #news {
-        order: 2;
-    }
-
-    #main {
-        order: 1;
-    }
-
-    #aside {
-        order: 3;
-    }
 }

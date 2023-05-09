@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav ul li {
+    width: 200px;
+    position: relative;
+}
+
+#nav li ul {
+    position: absolute;
+    display: none;
+}
+
+#nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: lightgray;
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+}
+
+#nav li:hover ul {
+    display: block;
+}
+
+#nav li:hover a {
+    color: white;
+    background-color: gold;
+    border-bottom: 2px solid white;
+}
+
+#nav li:hover ul a:hover {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
