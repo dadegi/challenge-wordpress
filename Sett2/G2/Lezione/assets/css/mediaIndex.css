@@ -12,13 +12,16 @@
 
     #news {
         order: 2;
+        background-color: blue;
     }
 
     #main {
         order: 1;
+        background-color: cyan;
     }
 
     #aside {
         order: 3;
+        background-color: yellow;
     }
 }
