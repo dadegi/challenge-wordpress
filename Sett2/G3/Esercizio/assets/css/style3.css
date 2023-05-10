@@ -1,0 +1,133 @@
+/* Comportamento generale */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Comportamento testata */
+.main-header {
+    display: flex; /* Usa il modello flexbox */
+    align-items: center; /* allineamento VERTICALE del contenuto della testata */
+    justify-content: center; /* allineamento ORIZZONTALE del contenuto della testata */
+    height: 160px; /* altezza testata */
+    background-color: midnightblue; /* sfondo testata */
+}
+
+/* Comportamento contenuto testata */
+.logo-header {
+    color: white; /* colore del testo */
+}
+
+/* Comportamento area navigazione */
+.main-nav {
+    background-color: teal; /* sfondo area navigazione */
+    margin-top: -16px; /* margine negativo per annullare il margine predefinito della testata che allontanerebbe la nav */
+}
+
+/* Comportamento area menu */
+.main-menu {
+    display: flex; /* Usa il modello flexbox */
+    flex-direction: row; /* Ordina gli elementi dell'area per RIGA, quindi in orizzontale */
+    justify-content: space-around; /* GIUSTIFICA il contenuto dell'area, cioè lo distribuisce
+    in maniera omogenea nello spazio orizzontale disponibile, inserendo la stessa distanza
+    tra gli elementi e il bordo pagina, che sarà la metà della distanza tra i vari elementi (SPACE-AROUND) */
+}
+
+/* Comportamento menu */
+nav ul {
+    list-style: none; /* rimuove le decorazioni dagli elementi lista */
+    list-style-image: none; /* rimuove le decorazioni dagli elementi lista */
+}
+
+/* Comportamento voci di menu */
+.menu-link {
+    font-weight: bold; /* peso carattere (grassetto) */
+    color: white; /* colore carattere */
+    padding: 10px; /* spazio minimo interno tra le voci di menu */
+    display: block; /* considera gli elementi come facenti parte ognuno di un blocco a sé stante */
+    /* Quest'ultima proprietà generalmente viene definita soltanto per blocchi come i menu */
+}
+
+/* Al passaggio del mouse il testo rimane invariato e lo sfondo si colora: */
+.menu-link:hover {
+    color: white; /* colore carattere */
+    background-color: tomato; /* colore sfondo */
+}
+
+/* Comportamento contenitore articoli */
+.articoli {
+    display: flex; /* Usa il modello flexbox */
+    flex-flow: row wrap; /* Ordina gli elementi dell'area per RIGA, quindi in orizzontale;
+    con il WRAP permettiamo agli elementi di disporsi su più righe, una volta terminato lo spazio orizzontale disponibile */
+    justify-content: space-between; /* GIUSTIFICA il contenuto dell'area, cioè lo distribuisce
+    in maniera omogenea nello spazio orizzontale disponibile, allineando gli elementi
+    estremi ai bordi della pagina (SPACE-BETWEEN - tipo Word) */
+    margin-top: 10px; /* margine superiore */
+}
+
+.contenuto {
+    display: flex; /* Usa il modello flexbox */
+    flex-direction: column; /* Allinea il contenuto in COLONNE */
+    width: 30%; /* larghezza box */
+    padding: 10px; /* spaziatura box */
+}
+
+ .contenuto:last-child { /* La proprietà LAST-CHILD di un contenitore serve per stabilire il comportamento del contenuto
+    di quel contenitore L'ULTIMA VOLTA che viene usato (nel nostro HTML a riga 51); la proprietà FIRST-CHILD
+    stabilirebbe il comportamento del contenitore quando viene usato per la PRIMA VOLTA (nostra riga 31) */
+    flex: 1; /* occupa il rimanente spazio orizzontale disponibile */
+}
+
+/* Comportamento singoli articoli */
+.articolo {
+    display: flex; /* Usa il modello flexbox */
+    flex-direction: column; /* Allinea il contenuto in COLONNE */
+    padding: 10px; /* spaziatura box */
+    background-color: lightskyblue; /* colore sfondo box */
+    border: 5px solid dodgerblue; /* bordo (spessore, tipo, colore) */
+    border-radius: 15px; /* arrotondamento del bordo */
+    text-align: justify; /* giustifica del testo */
+    flex: 1; /* impone al box di occupare tutto lo spazio disponibile */
+}
+
+/* Personalizzazione del button */
+button {
+    font-weight: bold; /* grassetto */
+    background-color: teal; /* colore di sfondo */
+    width: 200px; /* larghezza */
+    margin-top: auto; /* in orientamento verticale (flex-direction: column;) allinea alla linea di base */
+    align-self: center; /* allineamento orizzontale */
+}
+
+button:hover { /* comportamento al passaggio del mouse */
+    font-weight: bold;
+    background-color: tomato;
+    cursor: pointer; /* necessario per identificarlo come link, in quanto sul button non c'è il comportamento predefinito pointer anche se è un link */
+}
+
+@media screen and (max-width: 576px) { /* fino a 576px, in visualizzazione mobile... */
+    .main-menu { /* ... il menu da row passa a column, per mettere i links in verticale */
+        flex-direction: column;
+    }
+
+    .contenuto { /* i box di contenuto passano da 30% a 48% di larghezza e diminuiscono il padding; il quinto box, con flex: 1 a riga 77, occupa tutto lo spazio orizzontale disponibile */
+        width: 48%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) { /* da 577px a 768px, in visualizzazione tablet... */
+    .main-menu { /* ... il menu da row passa a column, per mettere i links in verticale */
+        flex-direction: column;
+    }
+    
+    .contenuto { /* i box di contenuto diminuiscono il padding */
+        padding: 5px;
+    }
+
+    .contenuto:nth-last-child(-n+2) { /* gli ultimi due box passano da 30% a 48%, occupando tutta la seconda riga */
+        width: 48%;
+    }
+}
