@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: burlywood;
+    color: navy;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+/* Area Header e Footer */
+
+header, footer {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: navy;
+    color: burlywood;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    height: 125px;
+}
+
+h1#testata {
+    font-size: 60px;
+}
+
+table#header {
+    width: 100%;
+}
+
+table#header nav {
+    background-color: darkcyan;
+    margin-left: -3px;
+    margin-right: -3px;
+    height: 30px;
+    padding: 10px;
+}
+
+div#slogan {
+    width: 70%;
+    margin: 0 auto;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: burlywood;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkred;
+}
+
+/* Area contenuto */
+
+/* Parti comuni */
+main {
+    margin: 10px;
+}
+
+.titolo {
+    text-align: center;
+}
+
+hr#divisorio {
+    border: 3px solid navy;
+}
+
+/* Area destinazioni */
+
+/* Tabella */
+table#destinazioni {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table#destinazioni td {
+    width: 25%;
+}
+
+table#destinazioni img {
+    width: 80%;
+    border-radius: 30%;
+    filter: grayscale(100%);
+    transition: border-radius 2s, filter 2s;
+}
+
+table#destinazioni img:hover {
+    border-radius: 0px;
+    filter: grayscale(0%);
+}
+
+/* Immagini */
+.img-right {
+    float: right;
+    padding-left: 10px;
+}
+
+.img-left {
+    float: left;
+    padding-right: 10px;
+}
+
+/* Link */
+a.linkDestinazioni:link, a.linkDestinazioni:visited {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-weight: bold;
+}
+
+a.linkDestinazioni:hover {
+    text-decoration: underline;
+    color: darkred;
+}
+
+/* Area Contatti */
+
+table#contatti {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Area Catalogo */
+
+table#catalogo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table#catalogo td {
+    border-bottom: dotted 3px navy;
+}
+
+table#catalogo img {
+    width: 25%;
+}
+
+div#altre {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: darkcyan;
+}
