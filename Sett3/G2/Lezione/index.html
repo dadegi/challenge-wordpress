@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bootstrap</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+
+	<body>
+        <header>
+            <div class="container-fluid text-center bg-primary">
+				<h1 id="titolo">BOOTSTRAP</h1>
+			</div>
+        </header>
+
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg bg-success"><h3>COLONNA 1</h3></div>
+					<div class="col-lg bg-danger"><h3>COLONNA 2</h3></div>
+					<div class="col-lg bg-warning"><h3>COLONNA 3</h3></div>
+				</div>
+			</div>
+
+			<div class="container text-center">
+				<h2>MISURE GRID SYSTEM</h2>
+			</div>
+			<div class="container">
+				<p>Il Grid System prevede un sistema a 12 colonne flexbox, utilizzabile con tutte le combinazioni possibili (3+6+3, 4+4+4, 10+2, 9+1+2, 2+7+3...) la cui somma finale sia 12.</p>
+				<p>Il Grid System mette a ddisposizione <b>SEI</b> classi per la sua organizzazione:</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>NOME CLASSE</th>
+							<th>DISPOSITIVO</th>
+							<th>RISOLUZIONE</th>
+						</tr>
+						<tbody>
+							<tr>
+								<td>.col-*</td>
+								<td>MINIMO</td>
+								<td>&lt;576px</td>
+							</tr>
+							<tr>
+								<td>.col-sm-*</td>
+								<td>PICCOLO</td>
+								<td>&gt;/&equals; 576px</td>
+							</tr>
+							<tr>
+								<td>.col-md-*</td>
+								<td>MEDIO</td>
+								<td>&gt;/&equals; 768px</td>
+							</tr>
+							<tr>
+								<td>.col-lg-*</td>
+								<td>MEDIO-GRANDE</td>
+								<td>&gt;/&equals; 992px</td>
+							</tr>
+							<tr>
+								<td>.col-xl-*</td>
+								<td>GRANDE</td>
+								<td>&gt;/&equals; 1200px</td>
+							</tr>
+							<tr>
+								<td>.col-xxl-*</td>
+								<td>MOLTO GRANDE</td>
+								<td>&gt;/&equals; 1400px</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>L'asterisco indica il numero di colonne del grid system che deve essere occupato dallo specifico div con classe col (div class="col-md-4" significa che il div occupa 4 colonne e il suo comportamento responsive va in funzione a min-with 768px.</p>
+								</td>
+							</tr>
+						</tbody>
+					</thead>
+				</table>
+			</div>
+			<div class="container text-center">
+				<h2>ESEMPI</h2>
+				<h4>Tre colonne uguali a larghezza piena, responsive a 992px</h4>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4 bg-primary"><p>COLONNA 1</p></div>
+					<div class="col-lg-4 bg-info"><p>COLONNA 2</p></div>
+					<div class="col-lg-4 bg-primary"><p>COLONNA 3</p></div>
+				</div>
+			</div>
+			<div class="container text-center">
+				<h4>Due colonne uguali non a larghezza piena, non responsive</h4>
+				<div class="row">
+					<div class="col bg-primary"><p>COLONNA 1</p></div>
+					<div class="col bg-info"><p>COLONNA 2</p></div>
+				</div>
+			</div>
+			<div class="container-fluid text-center">
+				<h4>Quattro colonne a larghezza piena, 20%-30%-30%-20%, responsive a 768px</h4>
+				<div class="row">
+					<div class="col-md-2 bg-primary"><p>COLONNA 1</p></div>
+					<div class="col-md-4 bg-info"><p>COLONNA 2</p></div>
+					<div class="col-md-4 bg-primary"><p>COLONNA 3</p></div>
+					<div class="col-md-2 bg-info"><p>COLONNA 4</p></div>
+				</div>
+			</div>
+			<div class="container-fluid text-center">
+				<h4>Sei colonne a larghezza piena, 2-8-2-3-6-3, disposte su due righe in un unico div row, non responsive</h4>
+				<div class="row row-cols-3">
+					<div class="col-2 bg-primary"><p>COLONNA 1</p></div>
+					<div class="col-8 bg-info"><p>COLONNA 2</p></div>
+					<div class="col-2 bg-primary"><p>COLONNA 3</p></div>
+					<div class="col-3 bg-info"><p>COLONNA 4</p></div>
+					<div class="col-6 bg-primary"><p>COLONNA 5</p></div>
+					<div class="col-3 bg-info"><p>COLONNA 6</p></div>
+				</div>
+			</div>
+			<div class="container text-center">
+				<h4>Layout a due colonne non a larghezza piena, non responsive, con una colonna all'interno della prima e due colonne uguali all'interno della seconda</h4>
+				<div class="row">
+					<div class="col-6 bg-primary"><p>COLONNA 1</p>
+						<div class="container">
+							<div class="row">
+								<div class="col-12 bg-info mb-2">COLONNA INTERNA</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 bg-info"><p>COLONNA 2</p>
+						<div class="container">
+							<div class="row">
+								<div class="col-6 bg-primary mb-2">COLONNA INTERNA 1</div>
+								<div class="col-6 bg-secondary mb-2">COLONNA INTERNA 2</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container text-center">
+				<h4>Tre colonne non a larghezza piena responsive, verticali fino a 576px, con una distribuzione 4-4-4 fino a 768px, 3-6-3 oltre i 768px</h4>
+				<div class="row">
+					<div class="col-sm-4 col-md-3 bg-primary"><p>COLONNA 1</p></div>
+					<div class="col-sm-4 col-md-6 bg-info"><p>COLONNA 2</p></div>
+					<div class="col-sm-4 col-md-3 bg-primary"><p>COLONNA 3</p></div>
+				</div>
+			</div>
+			<div class="container text-center">
+				<h4>Due colonne responsive, con una distribuzione 3-9 a 768px, 6-6 a 992px, 4-8 a 1200px, verticali a meno di 768px</h4>
+				<div class="row">
+					<div class="col-md-3 col-lg-6 col-xl-4 bg-primary"><p>COLONNA 1</p></div>
+					<div class="col-md-9 col-lg-6 col-xl-8 bg-info"><p>COLONNA 2</p></div>
+				</div>
+			</div>
+		</main>
+
+		<p>&nbsp;</p>
+
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
